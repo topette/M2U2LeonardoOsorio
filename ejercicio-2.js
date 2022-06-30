@@ -14,9 +14,9 @@ let numeros = []
 
 //enviar1.addEventListener("click", enviarboton);
 
-enviarboton => {
+function enviarboton() {
     if (a.value == '' || b.value == '' || c.value == '' || d.value == ''){
-        alert("A esta vacio ")
+        alert("Los campos estan vacios, digite un numero en cada uno")
     }
     else if (a.value == b.value || a.value == c.value || a.value == d.value || b.value == c.value || b.value == d.value || c.value == d.value ){
         alert("Los valores deben ser diferentes")
@@ -30,7 +30,7 @@ enviarboton => {
     let minimo = Math.min(...numeros)
     let maximo = Math.max(...numeros)
 
-    resultado.textContent = parseFloat(a.value) + parseInt(b.value) + parseInt(c.value) + parseInt(d.value)
+    resultado.textContent = parseInt(a.value) + parseInt(b.value) + parseInt(c.value) + parseInt(d.value)
     resultadomin.textContent = minimo
     resultadomax.textContent = maximo
     
@@ -48,7 +48,7 @@ function limpiarcampos(){
 }
 
 function otrafuncion() {
-    gracias.textContent = "Muchas gracias por llenar el form " + graciasclase2[1].textContent 
+    gracias.textContent = "Muchas gracias por llenar el formulario " + graciasclase2[1].textContent 
 
 }
 
