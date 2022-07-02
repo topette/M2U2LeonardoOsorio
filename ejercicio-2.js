@@ -44,16 +44,4 @@ function limpiarcampos(){
     b.value = ''
     c.value = ''
     d.value = ''
-    otrafuncion()
 }
-
-function otrafuncion() {
-    gracias.textContent = "Muchas gracias por llenar el formulario " + graciasclase2[1].textContent 
-
-}
-
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-
-  $(document).ready(function(){});
